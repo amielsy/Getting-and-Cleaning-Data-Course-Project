@@ -46,6 +46,6 @@ Finally, create another independent tidy data set with the average of each varia
 
 ###Variables
 
-Subject - ID of the subject. Values from 1-30
-Activity - possible values are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-features - Features are extracted from measurements of the acceloremeter and gyroscope from the subject doing the activities. Features are normalized and bounded within [-1,1]. 
+Subject - ID of the subject. Values from 1-30  
+Activity - possible values are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING  
+features (columns 3-81) - Features are extracted from measurements of the acceloremeter and gyroscope from the subject doing the activities. Features are normalized and bounded within [-1,1]. 
