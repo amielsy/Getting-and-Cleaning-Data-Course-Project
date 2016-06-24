@@ -17,6 +17,14 @@ For each record in the dataset it is provided:
 - An identifier of the subject who carried out the experiment.  
 Source: (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
+###Requirements for run_analysis.R
+
+1.Merges the training and the test sets to create one data set.  
+2.Extracts only the measurements on the mean and standard deviation for each measurement.  
+3.Uses descriptive activity names to name the activities in the data set.    
+4.Appropriately labels the data set with descriptive variable names.  
+5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
+
 ##Transformations done on original dataset
 
 Extract wanted features from feature.txt. We only want the variables with mean or standard deviation.  
@@ -30,5 +38,9 @@ Combine the datasets:
 into 1 dataset. Subject files make up the subject column. Y files make up the activity column. X files make up the columns from the wanted features from feature.txt.
 
 Change the activity column from numbers to its appropriate activity using activity_labels.txt.  
+Then, appropriately label the data set with descriptive activity names. I removed the parentheses and dash characters from the variables and changed the starting t with time and starting f with freq(frequency). For example:  
+tBodyAcc-mean()-X -> timeBodyAccmeanX  
+fBodyAcc-std()-X -> freqBodyAccstdX
 
+Finally, create another independent tidy data set with the average of each variable for each activity and each subject. Then print this to tiny.txt.
 
