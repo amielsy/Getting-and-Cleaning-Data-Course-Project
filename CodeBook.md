@@ -25,7 +25,7 @@ Source: (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using
 4.Appropriately labels the data set with descriptive variable names.  
 5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
 
-##Transformations done on original dataset
+###Transformations done on original dataset
 
 Extract wanted features from feature.txt. We only want the variables with mean or standard deviation.  
 Combine the datasets:
@@ -44,3 +44,8 @@ fBodyAcc-std()-X -> freqBodyAccstdX
 
 Finally, create another independent tidy data set with the average of each variable for each activity and each subject. Then print this to tiny.txt.
 
+###Variables
+
+Subject - ID of the subject. Values from 1-30
+Activity - possible values are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+features - Features are extracted from measurements of the acceloremeter and gyroscope from the subject doing the activities. Features are normalized and bounded within [-1,1]. 
